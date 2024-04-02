@@ -3,6 +3,7 @@ import "./globals.css";
 
 import Header from "@/components/Header";
 import Providers from "./providers";
+import NavBar from "@/components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers> 
            <Header/> {/* Everything inside Providers will be ClientSide  */} 
+           <NavBar />
           {children}
         </Providers>
       </body>
